@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+header .top-strip {
+}
+
+.link:hover {
+  color: #ff5252;
+}
