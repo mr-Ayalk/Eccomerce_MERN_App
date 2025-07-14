@@ -20,7 +20,7 @@ body {
   height: 8px !important;
 }
 ::-webkit-scrollbar-thumb {
-  background: #ccc;
+  background: #ff5252;
 }
 ::-webkit-scrollbar-track {
   background: #fff;
@@ -46,6 +46,9 @@ nav ul button {
 nav ul button .MuiTouchRipple-root::after {
   background: rgba(0, 0, 0, 1) !important;
 }
+.sliderHome {
+  overflow: inherit !important;
+}
 
 .swiper-button-prev,
 .swiper-button-next {
@@ -62,9 +65,20 @@ nav ul button .MuiTouchRipple-root::after {
 .swiper-button-prev:after,
 .swiper-button-next:after {
   font-size: 22px !important;
-  color: #000;
+  color: #000 !important;
 }
-
+.smlBtn .swiper-button-prev,
+.smlBtn .swiper-button-next {
+  width: 30px !important;
+  height: 30px !important ;
+  min-width: 30px !important;
+  top: 55% !important;
+}
+.smlBtn .swiper-button-prev:after,
+.smlBtn .swiper-button-next:after {
+  font-size: 18px !important;
+  color: #000 !important;
+}
 .homeCatSlider {
   overflow: inherit !important;
 }
@@ -99,4 +113,10 @@ nav ul button .MuiTouchRipple-root::after {
 }
 .homeCatSlider .item:hover img {
   transform: scale(1.1);
+}
+.MuiTabs-indicator {
+  background-color: #ff5252 !important;
+}
+.MuiTab-textColorPrimary.Mui-selected {
+  color: #ff5252 !important;
 }
