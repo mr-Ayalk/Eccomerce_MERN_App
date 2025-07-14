@@ -11,7 +11,7 @@ function HomeSlider() {
           navigation={true}
           spaceBetween={10}
           autoplay={{
-            delay: 2500,
+            delay: 25000,
             disabledOnInteration: false,
           }}
           modules={[Navigation, Autoplay]}
