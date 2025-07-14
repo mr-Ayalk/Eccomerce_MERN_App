@@ -7,7 +7,7 @@ import { Pagination } from "swiper/modules";
 import { Link } from "react-router-dom";
 function CatSlider() {
   return (
-    <div className="homeCatSlider">
+    <div className="homeCatSlider pt-4 py-8">
       <div className="container">
         <Swiper
           navigation={true}
