@@ -7,6 +7,10 @@ function Home() {
     <>
       <HomeSlider />
       <CatSlider />
+      <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+      <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+      <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+      <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
     </>
   );
 }
