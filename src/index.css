@@ -11,19 +11,27 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
+  background: #f5f0f0;
+  color: rgba(0, 0, 0, 0.9) !important;
 }
 .container {
-  width: 90%;
+  width: 95%;
   margin: auto;
 }
 
-header .top-strip {
-}
+/* header .top-strip {
+} */
 
 .link:hover {
-  color: #ff5252;
+  color: #ff5252 !important;
 }
 
 .MuiBadge-badge {
   background-color: #ff5252 !important;
+}
+nav ul button {
+  text-transform: capitalize !important;
+}
+nav ul button .MuiTouchRipple-root::after {
+  background: rgba(0, 0, 0, 1) !important;
 }

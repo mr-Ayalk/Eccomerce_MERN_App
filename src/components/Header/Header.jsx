@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../../assets/logo-dark-transparent.png";
+import logo from "../../assets/logo-light-transparent.png";
 import Search from "../Search/Search";
 // import Button from "@mui/material/Button";
 import Badge from "@mui/material/Badge";
@@ -9,6 +9,7 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { IoGitCompareOutline } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa6";
 import Tooltip from "@mui/material/Tooltip";
+import Navigation from "./Navigation/Navigation";
 const StyledBadge = styled(Badge)(({ theme }) => ({
   "& .MuiBadge-badge": {
     right: -3,
@@ -20,7 +21,7 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 
 function Header() {
   return (
-    <header>
+    <header className="bg-white">
       <div className="top-strip py-2 boarder-t-[1px] border-gray-250 border-b-[1px] ">
         <div className="container">
           <div className="flex items-center justify-between">
@@ -54,7 +55,7 @@ function Header() {
         </div>
       </div>
 
-      <div className="header py-6">
+      <div className="header py-4 border  boarder-b-[1px] border-gray-250">
         <div className="container flex items-center justify-between">
           <div className="col1 w-[25%]">
             <Link to={"/"}>
@@ -113,6 +114,8 @@ function Header() {
           </div>
         </div>
       </div>
+
+      <Navigation />
     </header>
   );
 }
