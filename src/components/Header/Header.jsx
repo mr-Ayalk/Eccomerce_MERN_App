@@ -1,6 +1,7 @@
-import React from "react";
-import { Link } from "react-router-dom";
 
+import { Link } from "react-router-dom";
+import logo from "../../assets/logo-dark-transparent.png";
+import Search from "../Search/Search";
 function Header() {
   return (
     <header>
@@ -37,15 +38,17 @@ function Header() {
         </div>
       </div>
 
-      <div className="header">
+      <div className="header py-6">
         <div className="container flex items-center justify-between">
-          <div className="col1">
+          <div className="col1 w-[25%]">
             <Link to={"/"}>
-              <img src="" alt="" />
+              <img src={logo} alt="logo" className="h-12" />
             </Link>
           </div>
-          <div className="col2"></div>
-          <div className="col3"></div>
+          <div className="col2 w-[45%]">
+            <Search/>
+          </div>
+          <div className="col3 w-[30%]"></div>
         </div>
       </div>
     </header>
