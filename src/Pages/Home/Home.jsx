@@ -90,7 +90,7 @@ function Home() {
         <div className="container">
           <h2 className="text-[20px] font-[600]">Featured Products</h2>
           <ProductsSlider items={6} />
-          <AdsBannerSlider items={2} />
+          <AdsBannerSlider items={4} />
         </div>
       </section>
       <section className="py-5 pb-8 bg-white pt-0 blogSection">
