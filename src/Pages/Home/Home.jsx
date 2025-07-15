@@ -16,6 +16,7 @@ import BlogItem from "../../components/BlogItem/BlogItem";
 import Footer from "../../components/Footer/Footer";
 import HomeSliderV2 from "../../components/HomeSliderV2/HomeSliderV2";
 import BannerBoxV2 from "../../components/bannerBoxV2/bannerBoxV2";
+import AdsBannerSliderV2 from "../../components/AdsBannerSliderV2/AdsBannerSliderV2";
 function Home() {
   const [value, setValue] = React.useState(0);
 
@@ -86,6 +87,7 @@ function Home() {
           <ProductsSlider items={6} />
         </div>
       </section>
+
       <section className="py-4 pt-2  bg-white">
         <div className="container">
           <div className="freeShipping w-[80%] mx-auto py-4 p-4 border-2 border border-[#ff5252] flex items-center justify-between rounded-md mb-7">
@@ -101,9 +103,13 @@ function Home() {
             </div>
             <p className="font-bold text-[25px]">-Only $200*</p>
           </div>
-          <AdsBannerSlider items={4} />
+            <AdsBannerSliderV2 items={4} />
+          {/* <AdsBannerSlider items={4} /> */}
         </div>
       </section>
+
+    
+
       <section className="py-5 bg-white pt-0">
         <div className="container">
           <h2 className="text-[20px] font-[600]">Latest Products</h2>
