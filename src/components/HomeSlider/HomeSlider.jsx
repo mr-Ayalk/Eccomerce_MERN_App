@@ -20,7 +20,7 @@ function HomeSlider() {
           <SwiperSlide>
             <div className="item rounded-[20px] overflow-hidden">
               <img
-                src="https://media.istockphoto.com/id/2151094353/photo/rainbow-colored-fruits-and-vegetables-banner.webp?a=1&b=1&s=612x612&w=0&k=20&c=143dFz98CfuIh5GFQFxokgFg4gp9SlUDmhjL5fFMLno="
+                src="https://graphicsfamily.com/wp-content/uploads/edd/2024/01/Fashion-sale-web-banner-design-scaled.jpg"
                 alt=""
                 className="!w-full h-[400px]"
               />
@@ -29,7 +29,7 @@ function HomeSlider() {
           <SwiperSlide>
             <div className="item rounded-[20px] overflow-hidden">
               <img
-                src="https://media.istockphoto.com/id/2207307745/photo/e-commerce-business-owner-using-a-tablet-to-track-orders-in-a-home-office-managing-online.webp?a=1&b=1&s=612x612&w=0&k=20&c=2g5nvIVsuYj0ioCZZQZlLVtC35fVgU7laG--tru2-MM="
+                src="https://static.vecteezy.com/system/resources/previews/008/174/590/non_2x/fashion-advertising-web-banner-illustration-vector.jpg"
                 className="!w-full h-[400px]"
               />
             </div>

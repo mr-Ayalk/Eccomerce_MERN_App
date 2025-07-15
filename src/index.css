@@ -120,3 +120,8 @@ nav ul button .MuiTouchRipple-root::after {
 .MuiTab-textColorPrimary.Mui-selected {
   color: #ff5252 !important;
 }
+.productsSlider .swiper-wrapper {
+  padding: 15px;
+  margin-left: -15px;
+  margin-right: -15px;
+}

@@ -7,6 +7,7 @@ import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 
 import AdsBannerSlider from "../../components/AdsBannerSlider/AdsBannerSlider";
+import ProductsSlider from "../../components/ProductsSlider/ProductsSlider";
 function Home() {
   const [value, setValue] = React.useState(0);
 
@@ -48,10 +49,10 @@ function Home() {
                 <Tab label="Fruits" />
                 <Tab label="Furniture" />
                 <Tab label="Books" />
-             
               </Tabs>
             </div>
           </div>
+          <ProductsSlider items={6} />
         </div>
       </section>
       <section className="py-16  bg-white">
