@@ -4,10 +4,15 @@ import CatSlider from "../../components/CatSlider/CatSlider";
 import { LiaShippingFastSolid } from "react-icons/lia";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
-import Box from "@mui/material/Box";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import "swiper/css/navigation";
+import "swiper/css";
 
 import AdsBannerSlider from "../../components/AdsBannerSlider/AdsBannerSlider";
 import ProductsSlider from "../../components/ProductsSlider/ProductsSlider";
+import BlogItem from "../../components/BlogItem/BlogItem";
 function Home() {
   const [value, setValue] = React.useState(0);
 
@@ -55,7 +60,7 @@ function Home() {
           <ProductsSlider items={6} />
         </div>
       </section>
-      <section className="py-16  bg-white">
+      <section className="py-4 pt-2  bg-white">
         <div className="container">
           <div className="freeShipping w-[80%] mx-auto py-4 p-4 border-2 border border-[#ff5252] flex items-center justify-between rounded-md mb-7">
             <div className="col1 flex items-center gap-4">
@@ -71,6 +76,60 @@ function Home() {
             <p className="font-bold text-[25px]">-Only $200*</p>
           </div>
           <AdsBannerSlider items={4} />
+        </div>
+      </section>
+      <section className="py-5 bg-white pt-0">
+        <div className="container">
+          <h2 className="text-[20px] font-[600]">Latest Products</h2>
+          <ProductsSlider items={6} />
+          <AdsBannerSlider items={3} />
+        </div>
+      </section>
+      <section className="py-5 bg-white pt-0">
+        <div className="container">
+          <h2 className="text-[20px] font-[600]">Featured Products</h2>
+          <ProductsSlider items={6} />
+          <AdsBannerSlider items={2} />
+        </div>
+      </section>
+      <section className="py-5 pb-8 bg-white pt-0 blogSection">
+        <div className="container">
+          <h2 className="text-[20px] mb-4 font-[600]">From Blogs</h2>
+          <Swiper
+            navigation={true}
+            slidesPerView={4}
+            spaceBetween={30}
+            Pagination={{
+              clickable: true,
+            }}
+            modules={[Navigation]}
+            className="blogSlider"
+          >
+            <SwiperSlide>
+              <BlogItem />
+            </SwiperSlide>
+            <SwiperSlide>
+              <BlogItem />
+            </SwiperSlide>
+            <SwiperSlide>
+              <BlogItem />
+            </SwiperSlide>
+            <SwiperSlide>
+              <BlogItem />
+            </SwiperSlide>
+            <SwiperSlide>
+              <BlogItem />
+            </SwiperSlide>
+            <SwiperSlide>
+              <BlogItem />
+            </SwiperSlide>
+            <SwiperSlide>
+              <BlogItem />
+            </SwiperSlide>
+            <SwiperSlide>
+              <BlogItem />
+            </SwiperSlide>
+          </Swiper>
         </div>
       </section>
       <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
