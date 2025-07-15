@@ -12,7 +12,7 @@ function AdsBannerSlider(props) {
         navigation={true}
         spaceBetween={10}
         modules={[Navigation, Autoplay]}
-        ClassNames="smlBtn"
+       className="smlBtn"
       >
         <SwiperSlide>
           <BannerBox

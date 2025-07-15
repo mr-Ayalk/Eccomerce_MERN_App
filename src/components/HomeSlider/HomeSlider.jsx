@@ -16,7 +16,7 @@ function HomeSlider() {
             disabledOnInteration: false,
           }}
           modules={[Navigation, Autoplay]}
-          ClassNames="sliderHomer"
+          className="sliderHomer"
         >
           <SwiperSlide>
             <div className="item rounded-[20px] overflow-hidden">

@@ -15,6 +15,7 @@ import ProductsSlider from "../../components/ProductsSlider/ProductsSlider";
 import BlogItem from "../../components/BlogItem/BlogItem";
 import Footer from "../../components/Footer/Footer";
 import HomeSliderV2 from "../../components/HomeSliderV2/HomeSliderV2";
+import BannerBoxV2 from "../../components/bannerBoxV2/bannerBoxV2";
 function Home() {
   const [value, setValue] = React.useState(0);
 
@@ -27,9 +28,23 @@ function Home() {
       <HomeSlider />
 
       <section className="py-6">
-        <div className="container flex items-center">
-          <div className="part1 w-[75%]">
+        <div className="container flex items-center gap-5">
+          <div className="part1 w-[70%]">
             <HomeSliderV2 />
+          </div>
+          <div className="part2 w-[30%] flex items-center justify-between flex-col gap-5">
+            <BannerBoxV2
+              info="right"
+              image={
+                "https://serviceapi.spicezgold.com/download/1741664665391_1741497254110_New_Project_50.jpg"
+              }
+            />
+            <BannerBoxV2
+              info="left"
+              image={
+                "https://serviceapi.spicezgold.com/download/1741664496923_1737020250515_New_Project_47.jpg"
+              }
+            />
           </div>
         </div>
       </section>

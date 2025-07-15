@@ -153,6 +153,10 @@ footer form input::placeholder {
   font-size: 13px !important;
   color: rgba(0, 0, 0, 0.8) !important;
 }
+
+.swiper-pagination-bullet{
+  background: #000 !important;
+}
 .swiper-pagination-bullet-active {
   background: #ff5252 !important;
 }
