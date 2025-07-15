@@ -13,6 +13,7 @@ import "swiper/css";
 import AdsBannerSlider from "../../components/AdsBannerSlider/AdsBannerSlider";
 import ProductsSlider from "../../components/ProductsSlider/ProductsSlider";
 import BlogItem from "../../components/BlogItem/BlogItem";
+import Footer from "../../components/Footer/Footer";
 function Home() {
   const [value, setValue] = React.useState(0);
 
@@ -132,10 +133,8 @@ function Home() {
           </Swiper>
         </div>
       </section>
-      <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
-      <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
-      <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
-      <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+
+      <Footer />
     </>
   );
 }
