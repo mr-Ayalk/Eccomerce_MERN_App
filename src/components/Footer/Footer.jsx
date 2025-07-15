@@ -4,6 +4,8 @@ import { PiKeyReturnLight } from "react-icons/pi";
 import { BsWallet2 } from "react-icons/bs";
 import { LiaGiftSolid } from "react-icons/lia";
 import { BiSupport } from "react-icons/bi";
+import { Link } from "react-router-dom";
+import { IoChatboxOutline } from "react-icons/io5";
 function Footer() {
   return (
     <footer className="py-6 bg-[#fafafa]">
@@ -37,7 +39,28 @@ function Footer() {
         </div>
         <hr />
 
-        
+        <div className="footer flex items-center py-8">
+          <div className="part1">
+            <h2 className="text-[20px] font-[600] mb-4">Contact Us</h2>
+            <p className="text-[13px] font-[400] pb-4">
+              Classyshop -Mega Super Store <br /> 507-Union Trade Center
+              Ethiopia
+            </p>
+            <Link className="link text-[13px]" to="mailto:someone@example.com">
+              sales@yourcompany
+            </Link>
+            <span className="text-[22px] font-[600] block w-full mt-3  mb-5 text-primary">
+              (+251) 944-559-678
+            </span>
+
+            <div className="flex items-center gap-2">
+              <IoChatboxOutline className="text-[40px] text-primary" />
+              <span className="text-[16px] font-[600]">Online Chat</span>
+              <br />
+              Get Expert Help
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
   );
