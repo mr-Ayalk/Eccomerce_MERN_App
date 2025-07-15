@@ -14,6 +14,7 @@ import AdsBannerSlider from "../../components/AdsBannerSlider/AdsBannerSlider";
 import ProductsSlider from "../../components/ProductsSlider/ProductsSlider";
 import BlogItem from "../../components/BlogItem/BlogItem";
 import Footer from "../../components/Footer/Footer";
+import HomeSliderV2 from "../../components/HomeSliderV2/HomeSliderV2";
 function Home() {
   const [value, setValue] = React.useState(0);
 
@@ -24,6 +25,15 @@ function Home() {
   return (
     <>
       <HomeSlider />
+
+      <section className="py-6">
+        <div className="container flex items-center">
+          <div className="part1 w-[75%]">
+            <HomeSliderV2 />
+          </div>
+        </div>
+      </section>
+
       <CatSlider />
       <section className="bg-white py-8">
         <div className="container">
