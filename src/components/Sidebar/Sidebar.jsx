@@ -8,6 +8,8 @@ import { FaAngleUp } from "react-icons/fa";
 import Button from "@mui/material/Button";
 function Sidebar() {
   const [isOpenCategoryFilter, setIsOpenCategoryFilter] = useState(true);
+  const [isOpenAvailFilter, setIsOpenAvailFilter] = useState(true);
+  const [isOpenSizeFilter, setIsOpenSizeFilter] = useState(true);
   return (
     <aside className="sidebar py-5">
       <div className="box">
@@ -40,6 +42,7 @@ function Sidebar() {
             <FormControlLabel
               control={<Checkbox size="small" />}
               label="Footwear"
+               className="w-full"
             />
             <FormControlLabel
               control={<Checkbox size="small" />}
@@ -65,6 +68,79 @@ function Sidebar() {
             <FormControlLabel
               control={<Checkbox size="small" />}
               label="Foods"
+              className="w-full"
+            />
+          </div>
+        </Collapse>
+      </div>
+      <div className="box">
+        <h3 className="w-full pr-5 mb-3 text-[16px] font-[600] flex items-center ">
+          Availability
+          <Button
+            className="!w-[30px] !h-[30px] !min-w-[30px] !rounded-full !ml-auto !text-[#000]"
+            onClick={() => setIsOpenAvailFilter(!isOpenAvailFilter)}
+          >
+            {isOpenAvailFilter === true ? <FaAngleDown /> : <FaAngleUp />}
+          </Button>
+        </h3>
+        <Collapse isOpened={isOpenAvailFilter}>
+          <div className="scroll px-4 relative -left-[13px]">
+            <FormControlLabel
+              control={<Checkbox size="small" />}
+              label="Available (17)"
+              className="w-full"
+            />
+            <FormControlLabel
+              control={<Checkbox size="small" />}
+              label="In stoke (17)"
+              className="w-full"
+            />
+            <FormControlLabel
+              control={<Checkbox size="small" />}
+              label="Not Available (1)"
+              className="w-full"
+            />
+          </div>
+        </Collapse>
+      </div>
+
+      <div className="box">
+        <h3 className="w-full pr-5 mb-3 text-[16px] font-[600] flex items-center ">
+          Size
+          <Button
+            className="!w-[30px] !h-[30px] !min-w-[30px] !rounded-full !ml-auto !text-[#000]"
+            onClick={() => setIsOpenSizeFilter(!isOpenSizeFilter)}
+          >
+            {isOpenSizeFilter === true ? <FaAngleDown /> : <FaAngleUp />}
+          </Button>
+        </h3>
+        <Collapse isOpened={isOpenSizeFilter}>
+          <div className="scroll px-4 relative -left-[13px]">
+            <FormControlLabel
+              control={<Checkbox size="small" />}
+              label="Small (6)"
+              className="w-full"
+            />
+            <FormControlLabel
+              control={<Checkbox size="small" />}
+              label="Medium (5)"
+              className="w-full"
+            />
+            <FormControlLabel
+              control={<Checkbox size="small" />}
+              label="Large (7)"
+              className="w-full"
+            />
+
+            <FormControlLabel
+              control={<Checkbox size="small" />}
+              label="XL  (3)"
+              className="w-full"
+            />
+
+            <FormControlLabel
+              control={<Checkbox size="small" />}
+              label="XXL (2)"
               className="w-full"
             />
           </div>
