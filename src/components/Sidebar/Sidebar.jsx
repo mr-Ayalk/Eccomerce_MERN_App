@@ -6,13 +6,16 @@ import "../Sidebar/Sidebar.css";
 import { FaAngleDown } from "react-icons/fa6";
 import { FaAngleUp } from "react-icons/fa";
 import Button from "@mui/material/Button";
+import RangeSlider from "react-range-slider-input";
+import "react-range-slider-input/dist/style.css";
+import Rating from "@mui/material/Rating";
 function Sidebar() {
   const [isOpenCategoryFilter, setIsOpenCategoryFilter] = useState(true);
   const [isOpenAvailFilter, setIsOpenAvailFilter] = useState(true);
   const [isOpenSizeFilter, setIsOpenSizeFilter] = useState(true);
   return (
     <aside className="sidebar py-5">
-      <div className="box">
+      <div className="box mb-3">
         <h3 className="w-full pr-5 mb-3 text-[16px] font-[600] flex items-center ">
           Shop by Category
           <Button
@@ -42,7 +45,7 @@ function Sidebar() {
             <FormControlLabel
               control={<Checkbox size="small" />}
               label="Footwear"
-               className="w-full"
+              className="w-full"
             />
             <FormControlLabel
               control={<Checkbox size="small" />}
@@ -73,7 +76,7 @@ function Sidebar() {
           </div>
         </Collapse>
       </div>
-      <div className="box">
+      <div className="box mb-3">
         <h3 className="w-full pr-5 mb-3 text-[16px] font-[600] flex items-center ">
           Availability
           <Button
@@ -104,7 +107,7 @@ function Sidebar() {
         </Collapse>
       </div>
 
-      <div className="box">
+      <div className="box mb-3">
         <h3 className="w-full pr-5 mb-3 text-[16px] font-[600] flex items-center ">
           Size
           <Button
@@ -145,6 +148,42 @@ function Sidebar() {
             />
           </div>
         </Collapse>
+      </div>
+
+      <div className="box mb-4">
+        <h3 className="w-full pr-5 mb-3 text-[16px] font-[600] flex items-center ">
+          Filter By Price
+        </h3>
+        <RangeSlider />
+        <div className="flex pt-4 pb-2 priceRanging">
+          <span className="text-[13px]">
+            From: <strong className="text-dark"> birr : {10}</strong>
+          </span>
+          <span className="mt-auto text-[13px]">
+            From: <strong className="text-dark">birr : {2999}</strong>
+          </span>
+        </div>
+      </div>
+
+      <div className="box mb-4">
+        <h3 className="w-full pr-5 mb-3 text-[16px] font-[600] flex items-center ">
+          Filter By Rating
+        </h3>
+        <div className="w-full">
+          <Rating name="size-small" defaultValue={5} size="small" readOnly />
+        </div>
+        <div className="w-full">
+          <Rating name="size-small" defaultValue={4} size="small" readOnly />
+        </div>
+        <div className="w-full">
+          <Rating name="size-small" defaultValue={3} size="small" readOnly />
+        </div>
+        <div className="w-full">
+          <Rating name="size-small" defaultValue={2} size="small" readOnly />
+        </div>
+        <div className="w-full">
+          <Rating name="size-small" defaultValue={1} size="small" readOnly />
+        </div>
       </div>
     </aside>
   );
