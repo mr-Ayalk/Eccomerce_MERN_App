@@ -36,7 +36,7 @@ function ProductListing() {
               underline="hover"
               color="inherit"
               href="/"
-              className="link transition"
+              className="link transition !text-[14px]"
             >
               Home
             </Link>
@@ -44,7 +44,7 @@ function ProductListing() {
               underline="hover"
               color="inherit"
               href="/"
-              className="link transition"
+              className="link transition !text-[14px]"
             >
               Fashion
             </Link>
