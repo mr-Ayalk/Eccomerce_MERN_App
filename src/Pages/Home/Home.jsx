@@ -4,16 +4,13 @@ import CatSlider from "../../components/CatSlider/CatSlider";
 import { LiaShippingFastSolid } from "react-icons/lia";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css/navigation";
 import "swiper/css";
-
 import AdsBannerSlider from "../../components/AdsBannerSlider/AdsBannerSlider";
 import ProductsSlider from "../../components/ProductsSlider/ProductsSlider";
 import BlogItem from "../../components/BlogItem/BlogItem";
-import Footer from "../../components/Footer/Footer";
 import HomeSliderV2 from "../../components/HomeSliderV2/HomeSliderV2";
 import BannerBoxV2 from "../../components/bannerBoxV2/bannerBoxV2";
 import AdsBannerSliderV2 from "../../components/AdsBannerSliderV2/AdsBannerSliderV2";
@@ -103,12 +100,10 @@ function Home() {
             </div>
             <p className="font-bold text-[25px]">-Only $200*</p>
           </div>
-            <AdsBannerSliderV2 items={4} />
+          <AdsBannerSliderV2 items={4} />
           {/* <AdsBannerSlider items={4} /> */}
         </div>
       </section>
-
-    
 
       <section className="py-5 bg-white pt-0">
         <div className="container">
@@ -164,8 +159,6 @@ function Home() {
           </Swiper>
         </div>
       </section>
-
-      <Footer />
     </>
   );
 }

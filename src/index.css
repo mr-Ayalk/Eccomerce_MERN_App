@@ -154,7 +154,7 @@ footer form input::placeholder {
   color: rgba(0, 0, 0, 0.8) !important;
 }
 
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
   background: #000 !important;
 }
 .swiper-pagination-bullet-active {
@@ -194,4 +194,11 @@ footer form input::placeholder {
 }
 .homeSliderV2 .info .btn_ {
   transition-duration: 2.1s;
+}
+.MuiCheckbox-root {
+  padding: 6px !important;
+}
+
+.ReactCollapse--collapse {
+  transition: height 400ms;
 }
