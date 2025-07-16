@@ -202,3 +202,17 @@ footer form input::placeholder {
 .ReactCollapse--collapse {
   transition: height 400ms;
 }
+
+.btn-org:hover {
+  background: #171717 !important;
+}
+
+.itemViewActions button.active svg {
+  color: #ff5252;
+  opacity: 1;
+}
+
+.Mui-selected.MuiPaginationItem-page{
+  background: #ff5252 !important;
+  color: #fff !important;
+}
