@@ -172,16 +172,16 @@ function Sidebar() {
         <div className="w-full">
           <Rating name="size-small" defaultValue={5} size="small" readOnly />
         </div>
-        <div className="w-full">
+        <div className="w-full  cursor-pointer">
           <Rating name="size-small" defaultValue={4} size="small" readOnly />
         </div>
-        <div className="w-full">
+        <div className="w-full  cursor-pointer">
           <Rating name="size-small" defaultValue={3} size="small" readOnly />
         </div>
-        <div className="w-full">
+        <div className="w-full  cursor-pointer">
           <Rating name="size-small" defaultValue={2} size="small" readOnly />
         </div>
-        <div className="w-full">
+        <div className="w-full  cursor-pointer">
           <Rating name="size-small" defaultValue={1} size="small" readOnly />
         </div>
       </div>

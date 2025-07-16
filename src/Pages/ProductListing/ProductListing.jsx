@@ -3,6 +3,7 @@ import Sidebar from "../../components/Sidebar/Sidebar";
 import Typography from "@mui/material/Typography";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Link from "@mui/material/Link";
+import ProductItem from "../../components/ProductItem/ProductItem";
 function handleClick(event) {
   event.preventDefault();
   console.info("You clicked a breadcrumb.");
@@ -37,7 +38,13 @@ function ProductListing() {
         <div className="container flex gap-3">
           <div className="sidebarWrapper w-[20%] h-full bg-white ">
             <Sidebar />
-          </div> 
+          </div>
+
+          <div className="rightContent w-80%">
+            <div className="grid grid-cols-4 md:grid-cols-4">
+              <ProductItem />
+            </div>
+          </div>
         </div>
       </div>
     </section>
