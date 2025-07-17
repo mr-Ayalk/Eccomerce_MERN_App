@@ -19,8 +19,17 @@ body {
 p {
   font-size: 14px;
   line-height: 25px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
 .btn-org {
   background: #ff5252 !important;
   color: #fff !important;
@@ -252,5 +261,27 @@ footer form input::placeholder {
   min-width: 40px !important;
   border: 1px solid rgba(0, 0, 0, 0.1) !important;
   height: 30px !important;
-  color:rgba(0,0,0,0.7)
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.iiz {
+  border-radius: 40px !important;
+  height: 470px !important;
+}
+.reviewScroll::-webkit-scrollbar {
+  width: 5px !important;
+}
+.reviewScroll::-webkit-scrollbar-thumb {
+  background: #ccc !important;
 }
