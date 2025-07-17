@@ -275,13 +275,16 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
-.iiz {
+/* .iiz {
   border-radius: 40px !important;
   height: 470px !important;
-}
+} */
 .reviewScroll::-webkit-scrollbar {
   width: 5px !important;
 }
 .reviewScroll::-webkit-scrollbar-thumb {
   background: #ccc !important;
+}
+.productDetailsModal .MuiDialogContent-root{
+  padding: 0 !important;
 }

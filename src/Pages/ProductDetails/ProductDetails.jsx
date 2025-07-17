@@ -12,9 +12,10 @@ import { IoGitCompareOutline } from "react-icons/io5";
 // import { TextField } from "@mui/material";
 import TextField from "@mui/material/TextField";
 import ProductsSlider from "../../components/ProductsSlider/ProductsSlider";
+import ProductDetailsComponent from "../../components/ProductDetailsComponent/ProductDetailsComponent";
 
 function ProductDetails() {
-  const [productActionIndex, setProductActionIndex] = useState(null);
+  // const [productActionIndex, setProductActionIndex] = useState(null);
   const [activeTab, setActiveTab] = useState(0);
   return (
     <>
@@ -56,6 +57,12 @@ function ProductDetails() {
           </div>
 
           <div className="productContent w-[70%] pr-10 pl-10 ">
+
+
+<ProductDetailsComponent/>
+
+
+{/*             
             <h1 className="text-[24px] font-[600] mb-2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ea
               ratione itaque
@@ -161,8 +168,24 @@ function ProductDetails() {
                 <IoGitCompareOutline className="text-[18px]" />
                 Add to Compare
               </span>
-            </div>
+            </div> */}
           </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </div>
 
         <div className="container pt-10">
