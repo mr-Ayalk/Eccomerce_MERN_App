@@ -20,6 +20,7 @@ import Login from "./Pages/Login/Login";
 import Register from "./Pages/Register/Register";
 import { Drawer } from "@mui/material";
 import CartPanel from "./components/CartPanel/CartPanel";
+import CartPage from "./Pages/CartPage/CartPage";
 // import Drawer from "@mui/materia/Drawer";
 const MyContext = createContext();
 function App() {
@@ -59,6 +60,7 @@ function App() {
             />
             <Route path={"/login"} exact={true} element={<Login />} />
             <Route path={"/register"} exact={true} element={<Register />} />
+            <Route path={"/cart"} exact={true} element={<CartPage />} />
           </Routes>
           <Footer />
         </MyContext.Provider>

@@ -294,5 +294,5 @@ input[type="number"] {
 }
 .cartPanel .MuiPaper-root {
   width: 400px;
-  overflow: hidden;
+  overflow: hidden; 
 }
