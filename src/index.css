@@ -292,3 +292,7 @@ input[type="number"] {
 .productDetailsModal .MuiDialogContent-root {
   padding: 0 !important;
 }
+.cartPanel .MuiPaper-root {
+  width: 400px;
+  overflow: hidden;
+}

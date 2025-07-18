@@ -1,16 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
 import { LiaShippingFastSolid } from "react-icons/lia";
 import { PiKeyReturnLight } from "react-icons/pi";
 import { BsWallet2 } from "react-icons/bs";
 import { LiaGiftSolid } from "react-icons/lia";
 import { BiSupport } from "react-icons/bi";
 import { Link } from "react-router-dom";
-import { IoChatboxOutline } from "react-icons/io5";
+import { IoChatboxOutline, IoCloseSharp } from "react-icons/io5";
 import Button from "@mui/material/Button";
 import { Checkbox, FormControlLabel } from "@mui/material";
 import { FaFacebookF, FaInstagram, FaPinterestP } from "react-icons/fa";
 import { AiOutlineYoutube } from "react-icons/ai";
+import { Drawer } from "@mui/material";
+
+import { MyContext } from "../../App";
+import CartPanel from "../CartPanel/CartPanel";
 function Footer() {
+  const context = useContext(MyContext);
   return (
     <>
       <footer className="py-6 bg-[#fafafa]">
@@ -157,7 +162,7 @@ function Footer() {
 
                 <Button className="btn-org">SUBSCRIBE</Button>
                 <FormControlLabel
-                  control={<Checkbox  />}
+                  control={<Checkbox />}
                   label="Iagree to the terms and conditions and the privacy policy"
                 />
               </form>
@@ -231,6 +236,22 @@ function Footer() {
           </div>
         </div>
       </div>
+      {/* Cart Panel */}
+      <Drawer
+        open={context.openCartPanel}
+        onClose={() => context.toggleCartPanel(false)}
+        anchor={"right"}
+        className="w-[500px] cartPanel"
+      >
+        <div className="flex items-center justify-between py-3 px-4 gap-3 borer-b border-[rgba(0,0,0,0.1)] overflow-hidden">
+          <h4>Shopping Cart (1)</h4>
+          <IoCloseSharp
+            className="text-[20px] cursor-pointer "
+            onClick={context.toggleCartPanel(false)}
+          />
+        </div>
+        <CartPanel />
+      </Drawer>
     </>
   );
 }

@@ -18,17 +18,27 @@ import { IoCloseSharp } from "react-icons/io5";
 import ProductDetailsComponent from "./components/ProductDetailsComponent/ProductDetailsComponent";
 import Login from "./Pages/Login/Login";
 import Register from "./Pages/Register/Register";
+import { Drawer } from "@mui/material";
+import CartPanel from "./components/CartPanel/CartPanel";
+// import Drawer from "@mui/materia/Drawer";
 const MyContext = createContext();
 function App() {
   const [openProductDetailsModel, setOpenProductDetailsModel] = useState(false);
   const [maxWidth, setMaxWidth] = useState("md");
   const [fullWidth, setFullWidth] = useState(true);
+  const [openCartPanel, setOpenCartPanel] = useState(false);
+  const toggleCartPanel = (newOpen) => () => {
+    setOpenCartPanel(newOpen);
+  };
 
   const handleCloseProductDetailsModel = () => {
     setOpenProductDetailsModel(false);
   };
   const values = {
     setOpenProductDetailsModel,
+    setOpenCartPanel,
+    openCartPanel,
+    toggleCartPanel,
   };
   return (
     <>
