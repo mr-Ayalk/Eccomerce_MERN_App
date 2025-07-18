@@ -296,3 +296,7 @@ input[type="number"] {
   width: 400px;
   overflow: hidden; 
 }
+
+.size-menu .MuiButtonBase-root{
+  font-size: 12px !important;
+}
