@@ -16,19 +16,18 @@ import { createContext, useState } from "react";
 import ProductZoom from "./components/ProductZoom/ProductZoom";
 import { IoCloseSharp } from "react-icons/io5";
 import ProductDetailsComponent from "./components/ProductDetailsComponent/ProductDetailsComponent";
+import Login from "./Pages/Login/Login";
 const MyContext = createContext();
 function App() {
   const [openProductDetailsModel, setOpenProductDetailsModel] = useState(false);
   const [maxWidth, setMaxWidth] = useState("md");
   const [fullWidth, setFullWidth] = useState(true);
 
-
-
   const handleCloseProductDetailsModel = () => {
     setOpenProductDetailsModel(false);
   };
   const values = {
-    setOpenProductDetailsModel
+    setOpenProductDetailsModel,
   };
   return (
     <>
@@ -47,6 +46,7 @@ function App() {
               exact={true}
               element={<ProductDetails />}
             />
+            <Route path={"/login"} exact={true} element={<Login />} />
           </Routes>
           <Footer />
         </MyContext.Provider>
@@ -83,4 +83,4 @@ function App() {
 }
 
 export default App;
-export {MyContext}
+export { MyContext };

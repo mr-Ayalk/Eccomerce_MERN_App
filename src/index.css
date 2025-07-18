@@ -37,6 +37,10 @@ h6 {
   font-size: 16px !important;
   padding: 7px 20px !important;
 }
+.btn-lg {
+  font-size: 18px !important;
+  padding: 10px 20px !important;
+}
 ::-webkit-scrollbar {
   width: 8px !important;
   height: 8px !important;
@@ -285,6 +289,6 @@ input[type="number"] {
 .reviewScroll::-webkit-scrollbar-thumb {
   background: #ccc !important;
 }
-.productDetailsModal .MuiDialogContent-root{
+.productDetailsModal .MuiDialogContent-root {
   padding: 0 !important;
 }
