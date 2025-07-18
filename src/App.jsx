@@ -17,6 +17,7 @@ import ProductZoom from "./components/ProductZoom/ProductZoom";
 import { IoCloseSharp } from "react-icons/io5";
 import ProductDetailsComponent from "./components/ProductDetailsComponent/ProductDetailsComponent";
 import Login from "./Pages/Login/Login";
+import Register from "./Pages/Register/Register";
 const MyContext = createContext();
 function App() {
   const [openProductDetailsModel, setOpenProductDetailsModel] = useState(false);
@@ -47,6 +48,7 @@ function App() {
               element={<ProductDetails />}
             />
             <Route path={"/login"} exact={true} element={<Login />} />
+            <Route path={"/register"} exact={true} element={<Register />} />
           </Routes>
           <Footer />
         </MyContext.Provider>
