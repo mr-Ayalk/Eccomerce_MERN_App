@@ -294,9 +294,24 @@ input[type="number"] {
 }
 .cartPanel .MuiPaper-root {
   width: 400px;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
-.size-menu .MuiButtonBase-root{
+.size-menu .MuiButtonBase-root {
   font-size: 12px !important;
+}
+
+.otpBox input {
+  border: 1px solid rgba(0, 0, 0, 0.3) !important;
+  outline: none !important;
+  border-radius: 4px;
+}
+
+.otpBox input:focus {
+  border: 1px solid rgba(0, 0, 0, 0.7) !important;
+}
+
+.otpPage .container {
+  height: 90vh;
+  display: flex;
 }

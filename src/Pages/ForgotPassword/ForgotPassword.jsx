@@ -11,48 +11,32 @@ import Button from "@mui/material/Button";
 import { Link, useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { MyContext } from "../../App";
-function Login() {
+function ForgotPassword() {
   const context = useContext(MyContext);
   const [isShowPassword, setIsShowPassword] = useState(false);
-  const [formFields, setFormFields] = useState({
-    email: "",
-    password: "",
-  });
+  const [isShowPassword2, setIsShowPassword2] = useState(false);
   const history = useNavigate();
-  const forgotPassword = () => {
-    context.openAlertBox("success", "OTP Send");
-    history("/verify");
-  };
+
   return (
     <section className="section py-10">
       <div className="container">
         <div className="card shadow-md w-[400px] m-auto rounded-md bg-white p-5 px-10">
           <h3 className="text-center text-[18px] text-black ">
-            Login to your account
+            Forgot Password
           </h3>
 
           <form action="" className="w-full mt-5">
-            <div className="form-group w-full mb-5">
-              <TextField
-                type="email"
-                id="email"
-                label="Email"
-                variant="outlined"
-                className="w-full"
-                name="name"
-              />
-            </div>
             <div className="form-group w-full mb-5 relative">
               <TextField
                 type={isShowPassword === false ? "password" : "text"}
                 id="password"
-                label="Password"
+                label="New Password"
                 variant="outlined"
                 className="w-full"
-                name="password"
+                name="name"
               />
               <Button
-                type="submit"
+                type="button"
                 className="!absolute top-[10px] right-[10px] z-50 !w-[35px] !h-[30px] !min-w-[35px] !rounded-full !text-black "
                 onClick={() => {
                   setIsShowPassword(!isShowPassword);
@@ -65,16 +49,32 @@ function Login() {
                 )}
               </Button>
             </div>
+            <div className="form-group w-full mb-5 relative">
+              <TextField
+                type={isShowPassword2 === false ? "password" : "text"}
+                id="confirm_password"
+                label="Confirm Password"
+                variant="outlined"
+                className="w-full"
+                name="password"
+              />
+              <Button
+                type="button"
+                className="!absolute top-[10px] right-[10px] z-50 !w-[35px] !h-[30px] !min-w-[35px] !rounded-full !text-black "
+                onClick={() => {
+                  setIsShowPassword2(!isShowPassword2);
+                }}
+              >
+                {isShowPassword2 === true ? (
+                  <IoMdEye className="text-[20px] opacity-75" />
+                ) : (
+                  <IoMdEyeOff className="text-[20px] opacity-75" />
+                )}
+              </Button>
+            </div>
 
-            <a
-              href="#"
-              className="link cursor-pointer text-[14px] font-[600]"
-              onClick={forgotPassword}
-            >
-              Forgot Password
-            </a>
             <div className="flex items-center w-full mt-3 mb-3">
-              <Button className="btn-org  btn-lg w-full">Login</Button>
+              <Button className="btn-org  btn-lg w-full">Reset Password</Button>
             </div>
             <p className="text-center">
               Not Registered?
@@ -100,4 +100,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default ForgotPassword;
