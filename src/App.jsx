@@ -32,6 +32,7 @@ function App() {
   const [maxWidth, setMaxWidth] = useState("md");
   const [fullWidth, setFullWidth] = useState(true);
   const [openCartPanel, setOpenCartPanel] = useState(false);
+  const [isLogin, setIsLogin] = useState(true);
   const toggleCartPanel = (newOpen) => () => {
     setOpenCartPanel(newOpen);
   };
@@ -53,6 +54,8 @@ function App() {
     openCartPanel,
     toggleCartPanel,
     openAlertBox,
+    isLogin,
+    setIsLogin,
   };
   return (
     <>
@@ -75,8 +78,12 @@ function App() {
             <Route path={"/register"} exact={true} element={<Register />} />
             <Route path={"/cart"} exact={true} element={<CartPage />} />
             <Route path={"/verify"} exact={true} element={<Verify />} />
-            <Route path={"/forgot-password"} exact={true} element={<ForgotPassword/>} />
-               <Route path={"/checkout"} exact={true} element={<Checkout/>} />
+            <Route
+              path={"/forgot-password"}
+              exact={true}
+              element={<ForgotPassword />}
+            />
+            <Route path={"/checkout"} exact={true} element={<Checkout />} />
           </Routes>
           <Footer />
         </MyContext.Provider>

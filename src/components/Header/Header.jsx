@@ -69,7 +69,10 @@ function Header() {
             <Search />
           </div>
           <div className="col3 w-[30%] flex items-center pl-7">
-            <ul className="flex items-center justify-end w-full gap-3">
+
+            {
+              context.isLogin ===false? (<>
+                <ul className="flex items-center justify-end w-full gap-3">
               <li className="list-none">
                 <Link
                   to="/login"
@@ -117,6 +120,9 @@ function Header() {
                 </Tooltip>
               </li>
             </ul>
+              </>):"user login"
+            }
+          
           </div>
         </div>
       </div>
