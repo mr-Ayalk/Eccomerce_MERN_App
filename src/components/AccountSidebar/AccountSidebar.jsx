@@ -30,7 +30,7 @@ function AccountSidebar() {
 
         <ul className="list-none pb-5 bg-[#f1f1f1] myAccountTabs">
           <li className="w-full">
-            <NavLink to="/my-account" exact={true} activeClassName="isActive">
+            <NavLink to="/my-account" activeclassname="isActive">
               <Button className="w-full !text-left !py-2 !px-5 !justify-start !capitalize !text-[rgba(0,0,0,0.8)] !rounded-none flex items-center gap-2 ">
                 <FaRegUser className="text-[18px]" />
                 User Profile
@@ -38,7 +38,7 @@ function AccountSidebar() {
             </NavLink>
           </li>
           <li className="w-full">
-            <NavLink to="/my-list" exact={true} activeClassName="isActive">
+            <NavLink to="/my-list" activeclassname="isActive">
               <Button className="w-full !text-left !py-2 !px-5 !justify-start !capitalize !text-[rgba(0,0,0,0.8)] !rounded-none flex items-center gap-2 ">
                 <IoMdHeartEmpty className="text-[18px]" />
                 My List
@@ -46,7 +46,7 @@ function AccountSidebar() {
             </NavLink>
           </li>
           <li className="w-full">
-            <NavLink to="/my-orders" exact={true} activeClassName="isActive">
+            <NavLink to="/my-orders" activeclassname="isActive">
               <Button className="w-full !text-left !py-2 !px-5 !justify-start !capitalize !text-[rgba(0,0,0,0.8)] !rounded-none flex items-center gap-2 ">
                 <IoBagCheckOutline className="text-[18px]" />
                 My Orders
@@ -54,7 +54,7 @@ function AccountSidebar() {
             </NavLink>
           </li>
           <li className="w-full">
-            <NavLink to="/logout" exact={true} activeClassName="isActive">
+            <NavLink to="/logout" activeclassname="isActive">
               <Button className="w-full !text-left !py-2 !px-5 !justify-start !capitalize !text-[rgba(0,0,0,0.8)] !rounded-none flex items-center gap-2 ">
                 <IoIosLogOut className="text-[18px]" />
                 Logout

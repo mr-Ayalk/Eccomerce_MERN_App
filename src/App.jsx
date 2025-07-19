@@ -64,30 +64,18 @@ function App() {
         <MyContext.Provider value={values}>
           <Header />
           <Routes>
-            <Route path={"/"} exact={true} element={<Home />} />
-            <Route
-              path={"/ProductListing"}
-              exact={true}
-              element={<ProductListing />}
-            />
-            <Route
-              path={"/ProductDetails/:id"}
-              exact={true}
-              element={<ProductDetails />}
-            />
-            <Route path={"/login"} exact={true} element={<Login />} />
-            <Route path={"/register"} exact={true} element={<Register />} />
-            <Route path={"/cart"} exact={true} element={<CartPage />} />
-            <Route path={"/verify"} exact={true} element={<Verify />} />
-            <Route
-              path={"/forgot-password"}
-              exact={true}
-              element={<ForgotPassword />}
-            />
-            <Route path={"/checkout"} exact={true} element={<Checkout />} />
-            <Route path={"/my-account"} exact={true} element={<MyAccount />} />
-            <Route path={"/my-list"} exact={true} element={<MyList />} />
-            <Route path={"/my-orders"} exact={true} element={<Orders />} />
+            <Route path={"/"} element={<Home />} />
+            <Route path={"/ProductListing"} element={<ProductListing />} />
+            <Route path={"/ProductDetails/:id"} element={<ProductDetails />} />
+            <Route path={"/login"} element={<Login />} />
+            <Route path={"/register"} element={<Register />} />
+            <Route path={"/cart"} element={<CartPage />} />
+            <Route path={"/verify"} element={<Verify />} />
+            <Route path={"/forgot-password"} element={<ForgotPassword />} />
+            <Route path={"/checkout"} element={<Checkout />} />
+            <Route path={"/my-account"} element={<MyAccount />} />
+            <Route path={"/my-list"} element={<MyList />} />
+            <Route path={"/my-orders"} element={<Orders />} />
           </Routes>
           <Footer />
         </MyContext.Provider>
