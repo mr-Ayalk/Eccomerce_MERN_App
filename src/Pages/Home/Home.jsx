@@ -126,7 +126,7 @@ function Home() {
             navigation={true}
             slidesPerView={4}
             spaceBetween={30}
-            Pagination={{
+            pagination={{
               clickable: true,
             }}
             modules={[Navigation]}

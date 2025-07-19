@@ -27,7 +27,7 @@ function ProductZoom() {
           navigation={true}
           slidesPerView={5}
           spaceBetween={0}
-          Pagination={{
+          pagination={{
             clickable: true,
           }}
           modules={[Navigation]}
@@ -139,7 +139,7 @@ function ProductZoom() {
           navigation={false}
           slidesPerView={1}
           spaceBetween={0}
-          Pagination={{
+          pagination={{
             clickable: true,
           }}
         >

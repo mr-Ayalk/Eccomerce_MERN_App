@@ -18,8 +18,7 @@ function ProductDetailsComponent() {
   return (
     <div>
       <h1 className="text-[24px] font-[600] mb-2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ea
-        ratione itaque
+        Lorem ipsum dolor sit amet consectetur
       </h1>
       <div className="flex items-center gap-3">
         <span className="text-gray-400 text-[13px]">
@@ -50,11 +49,6 @@ function ProductDetailsComponent() {
       <p className="mt-3 pr-10 mb-5">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, at.
         Accusamus ad fugiat, nam perferendis vel adipisci, blanditiis voluptates
-        suscipit, obcaecati nemo modi delectus odio dicta architecto aliquam
-        aliquid accusantium. Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Temporibus dolore, suscipit et asperiores sapiente nostrum animi
-        alias accusantium repellendus? Blanditiis esse exercitationem ducimus
-        sequi nulla laborum perspiciatis enim tempora dignissimos.
       </p>
 
       <div className="flex items-center gap-3 ">

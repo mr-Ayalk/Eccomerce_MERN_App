@@ -8,7 +8,6 @@ import IconButton from "@mui/material/IconButton";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { IoBagCheckOutline, IoGitCompareOutline } from "react-icons/io5";
 
-
 import { FaRegHeart } from "react-icons/fa6";
 import Tooltip from "@mui/material/Tooltip";
 import Navigation from "./Navigation/Navigation";
@@ -18,11 +17,11 @@ import { FaRegUser } from "react-icons/fa";
 
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import PersonAdd from "@mui/icons-material/PersonAdd";
-import Divider from "@mui/material/Divider";
-import { Avatar, ListItemIcon } from "@mui/material";
-import Settings from "@mui/icons-material/Settings";
-import Logout from "@mui/icons-material/Logout";
+// import PersonAdd from "@mui/icons-material/PersonAdd";
+// import Divider from "@mui/material/Divider";
+// import { Avatar, ListItemIcon } from "@mui/material";
+// import Settings from "@mui/icons-material/Settings";
+// import Logout from "@mui/icons-material/Logout";
 import { IoIosLogOut, IoMdHeartEmpty } from "react-icons/io";
 const StyledBadge = styled(Badge)(({ theme }) => ({
   "& .MuiBadge-badge": {
@@ -112,9 +111,9 @@ function Header() {
                     className="!text-[#000] myAccountWrap flex items-center gap-3 cursor-pointer"
                     onClick={handleClick}
                   >
-                    <Button className="!w-[40px] !h-[40px] !min-w-[40px] !rounded-full !bg-[#f1f1f1]">
+                    <div className="!w-[40px] !h-[40px] !min-w-[40px] !rounded-full !bg-[#f1f1f1]">
                       <FaRegUser className="text-[16px] text-[rgba(0,0,0,0.7)]" />
-                    </Button>
+                    </div>
                     <div className="info flex flex-col">
                       <h4 className="leading-3 text-[14px] text-[rgba(0,0,0,0.7)]  mb-0 capitalize text-left justify-start font-[500]">
                         Ayalk Teketel
@@ -172,21 +171,22 @@ function Header() {
                       </MenuItem>
                     </Link>
                     <Link to="/my-orders" className="w-full block">
-                    <MenuItem
-                      onClick={handleClose}
-                      className="flex gap-2 !py-2"
-                    >
-                      <IoBagCheckOutline className="text-[18px]" />
-                      <span className="text-[14px]">Orders</span>
-                    </MenuItem></Link>
+                      <MenuItem
+                        onClick={handleClose}
+                        className="flex gap-2 !py-2"
+                      >
+                        <IoBagCheckOutline className="text-[18px]" />
+                        <span className="text-[14px]">Orders</span>
+                      </MenuItem>
+                    </Link>
                     <Link to="/my-list" className="w-full block">
-                    <MenuItem
-                      onClick={handleClose}
-                      className="flex gap-2 !py-2"
-                    >
-                      <IoMdHeartEmpty className="text-[18px]" />
-                      <span className="text-[14px]">My List</span>
-                    </MenuItem>
+                      <MenuItem
+                        onClick={handleClose}
+                        className="flex gap-2 !py-2"
+                      >
+                        <IoMdHeartEmpty className="text-[18px]" />
+                        <span className="text-[14px]">My List</span>
+                      </MenuItem>
                     </Link>
                     <MenuItem
                       onClick={handleClose}

@@ -13,7 +13,7 @@ function CatSlider() {
           navigation={true}
           slidesPerView={8}
           spaceBetween={10}
-          Pagination={{
+          pagination={{
             clickable: true,
           }}
           modules={[Navigation]}

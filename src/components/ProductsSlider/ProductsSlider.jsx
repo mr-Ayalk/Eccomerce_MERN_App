@@ -14,7 +14,7 @@ function ProductsSlider(props) {
         navigation={true}
         slidesPerView={props.items}
         spaceBetween={10}
-        Pagination={{
+        pagination={{
           clickable: true,
         }}
         modules={[Navigation]}
