@@ -27,6 +27,7 @@ import ForgotPassword from "./Pages/ForgotPassword/ForgotPassword";
 import Checkout from "./Pages/Checkout/Checkout";
 import MyAccount from "./Pages/MyAccount/MyAccount";
 import MyList from "./Pages/MyList/MyList";
+import Orders from "./Pages/Orders/Orders";
 // import Drawer from "@mui/materia/Drawer";
 const MyContext = createContext();
 function App() {
@@ -88,6 +89,7 @@ function App() {
             <Route path={"/checkout"} exact={true} element={<Checkout />} />
             <Route path={"/my-account"} exact={true} element={<MyAccount />} />
                <Route path={"/my-list"} exact={true} element={<MyList />} />
+                <Route path={"/my-orders"} exact={true} element={<Orders />} />
           </Routes>
           <Footer />
         </MyContext.Provider>

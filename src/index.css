@@ -73,6 +73,9 @@ h6 {
 ::-webkit-scrollbar-track {
   background: #fff;
 }
+.overflow-x-auto::-webkit-scrollbar-thumb {
+  background: #ccc;
+}
 .container {
   width: 95%;
   margin: auto;
