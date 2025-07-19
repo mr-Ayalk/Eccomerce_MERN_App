@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import AccountSidebar from "../../components/AccountSidebar/AccountSidebar";
-import { Collapse } from "react-collapse";
+
 import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 import Button from "@mui/material/Button";
 import Badge from "../../components/Badge/Badge";

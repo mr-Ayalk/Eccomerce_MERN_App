@@ -1,13 +1,3 @@
-import React from "react";
-import { IoCloseSharp } from "react-icons/io5";
-import { Link } from "react-router-dom";
-import Button from "@mui/material/Button";
-import Menu from "@mui/material/Menu";
-import MenuItem from "@mui/material/MenuItem";
-import { GoTriangleDown } from "react-icons/go";
-import { Rating } from "@mui/material";
-import { BsFillBagCheckFill } from "react-icons/bs";
-
 import MyListItems from "./MyListItems.jsx";
 import AccountSidebar from "../../components/AccountSidebar/AccountSidebar.jsx";
 

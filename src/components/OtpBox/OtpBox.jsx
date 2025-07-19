@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const OtpBox = ({ length, onChange }) => {
   const [otp, setOtp] = useState(new Array(length).fill(""));

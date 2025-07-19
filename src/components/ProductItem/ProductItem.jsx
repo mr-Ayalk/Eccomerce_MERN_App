@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import  { useContext } from "react";
 import "../ProductItem/ProductItem.css";
 import { Link } from "react-router-dom";
 import Rating from "@mui/material/Rating";

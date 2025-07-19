@@ -1,6 +1,4 @@
-import React from "react";
 import "../Search/Search.css";
-import { IoSearch } from "react-icons/io5";
 import { FaSearch } from "react-icons/fa";
 import Button from "@mui/material/Button";
 function Search() {

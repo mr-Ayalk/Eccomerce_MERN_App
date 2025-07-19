@@ -1,5 +1,4 @@
 import { Button } from "@mui/material";
-import React from "react";
 import { MdOutlineDeleteOutline } from "react-icons/md";
 import { Link } from "react-router-dom";
 

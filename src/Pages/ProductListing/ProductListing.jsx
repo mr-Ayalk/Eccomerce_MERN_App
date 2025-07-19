@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Sidebar from "../../components/Sidebar/Sidebar";
-import Typography from "@mui/material/Typography";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Link from "@mui/material/Link";
 import ProductItem from "../../components/ProductItem/ProductItem";
@@ -12,10 +11,7 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import ProductItemListView from "../../components/ProductItemListView/ProductItemListView";
 
-// function handleClick(event) {
-//   event.preventDefault();
-//   console.info("You clicked a breadcrumb.");
-// }
+
 function ProductListing() {
   const [itemView, setItemView] = useState("grid");
   const [anchorEl, setAnchorEl] = React.useState(null);

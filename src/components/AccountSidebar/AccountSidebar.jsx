@@ -1,12 +1,9 @@
-import React from "react";
-
 import { FaCloudUploadAlt, FaRegUser } from "react-icons/fa";
 import Button from "@mui/material/Button";
 import { IoBagCheckOutline } from "react-icons/io5";
-
 import { IoIosLogOut, IoMdHeartEmpty } from "react-icons/io";
 import { NavLink } from "react-router";
-import TextField from "@mui/material/TextField";
+
 function AccountSidebar() {
   return (
     <>

@@ -1,9 +1,7 @@
-import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css/navigation";
 import "swiper/css";
-import { Pagination } from "swiper/modules";
 import { Link } from "react-router-dom";
 function CatSlider() {
   return (

@@ -8,18 +8,16 @@ import Footer from "./components/Footer/Footer";
 import ProductDetails from "./Pages/ProductDetails/ProductDetails";
 import Button from "@mui/material/Button";
 import Dialog from "@mui/material/Dialog";
-import DialogActions from "@mui/material/DialogActions";
+
 import DialogContent from "@mui/material/DialogContent";
-import DialogContentText from "@mui/material/DialogContentText";
-import DialogTitle from "@mui/material/DialogTitle";
+
 import { createContext, useState } from "react";
 import ProductZoom from "./components/ProductZoom/ProductZoom";
 import { IoCloseSharp } from "react-icons/io5";
 import ProductDetailsComponent from "./components/ProductDetailsComponent/ProductDetailsComponent";
 import Login from "./Pages/Login/Login";
 import Register from "./Pages/Register/Register";
-import { Drawer } from "@mui/material";
-import CartPanel from "./components/CartPanel/CartPanel";
+
 import CartPage from "./Pages/CartPage/CartPage";
 import Verify from "./Pages/Verify/Verify";
 import toast, { Toaster } from "react-hot-toast";
@@ -88,8 +86,8 @@ function App() {
             />
             <Route path={"/checkout"} exact={true} element={<Checkout />} />
             <Route path={"/my-account"} exact={true} element={<MyAccount />} />
-               <Route path={"/my-list"} exact={true} element={<MyList />} />
-                <Route path={"/my-orders"} exact={true} element={<Orders />} />
+            <Route path={"/my-list"} exact={true} element={<MyList />} />
+            <Route path={"/my-orders"} exact={true} element={<Orders />} />
           </Routes>
           <Footer />
         </MyContext.Provider>

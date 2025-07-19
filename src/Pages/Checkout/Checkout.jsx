@@ -1,5 +1,4 @@
 import TextField from "@mui/material/TextField";
-import React from "react";
 import { BsFillBagCheckFill } from "react-icons/bs";
 import Button from "@mui/material/Button";
 function Checkout() {

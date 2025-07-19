@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import OtpBox from "../../components/OtpBox/OtpBox";
 import Button from "@mui/material/Button";
 

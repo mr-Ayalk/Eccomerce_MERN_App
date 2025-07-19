@@ -17,11 +17,7 @@ import { FaRegUser } from "react-icons/fa";
 
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-// import PersonAdd from "@mui/icons-material/PersonAdd";
-// import Divider from "@mui/material/Divider";
-// import { Avatar, ListItemIcon } from "@mui/material";
-// import Settings from "@mui/icons-material/Settings";
-// import Logout from "@mui/icons-material/Logout";
+
 import { IoIosLogOut, IoMdHeartEmpty } from "react-icons/io";
 const StyledBadge = styled(Badge)(({ theme }) => ({
   "& .MuiBadge-badge": {

@@ -1,16 +1,9 @@
-import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Rating from "@mui/material/Rating";
-
-import { Link } from "react-router-dom";
-
 import Button from "@mui/material/Button";
 import { useState } from "react";
-
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa";
 import { IoGitCompareOutline } from "react-icons/io5";
-// import { TextField } from "@mui/material";
-import TextField from "@mui/material/TextField";
 import QtyBox from "../QtyBox/QtyBox";
 
 function ProductDetailsComponent() {

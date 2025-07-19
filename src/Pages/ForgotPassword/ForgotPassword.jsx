@@ -1,21 +1,17 @@
-import React, { useContext, useState } from "react";
-import Box from "@mui/material/Box";
-import Input from "@mui/material/Input";
-import InputLabel from "@mui/material/InputLabel";
-import InputAdornment from "@mui/material/InputAdornment";
-import FormControl from "@mui/material/FormControl";
+import  {  useState } from "react";
+// import  { useContext } from "react";
 import TextField from "@mui/material/TextField";
-
 import { IoMdEye, IoMdEyeOff } from "react-icons/io";
 import Button from "@mui/material/Button";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+// import {  useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
-import { MyContext } from "../../App";
+// import { MyContext } from "../../App";
 function ForgotPassword() {
-  const context = useContext(MyContext);
+  // const context = useContext(MyContext);
   const [isShowPassword, setIsShowPassword] = useState(false);
   const [isShowPassword2, setIsShowPassword2] = useState(false);
-  const history = useNavigate();
+  // const history = useNavigate();
 
   return (
     <section className="section py-10">

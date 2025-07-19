@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css/navigation";
@@ -27,7 +27,7 @@ function HomeSliderV2() {
         delay: 2500,
         disabledOnInteration: false,
       }}
-      //   pagination={true}
+    
       pagination={{
         clickable: true,
       }}

@@ -1,4 +1,3 @@
-import React from "react";
 import "../BannerBoxV2/BannerBoxV2.css";
 import { Link } from "react-router-dom";
 function BannerBoxV2(props) {
