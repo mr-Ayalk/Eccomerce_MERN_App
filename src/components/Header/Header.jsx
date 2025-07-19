@@ -107,8 +107,8 @@ function Header() {
                     className="!text-[#000] myAccountWrap flex items-center gap-3 cursor-pointer"
                     onClick={handleClick}
                   >
-                    <div className="!w-[40px] !h-[40px] !min-w-[40px] !rounded-full !bg-[#f1f1f1]">
-                      <FaRegUser className="text-[16px] text-[rgba(0,0,0,0.7)]" />
+                    <div className="!w-[40px] !h-[40px] !min-w-[40px] !rounded-full !bg-[#f1f1f1] relative">
+                      <FaRegUser className="text-[16px] text-[rgba(0,0,0,0.7)] !items-center absolute top-[10px] left-[10px]" />
                     </div>
                     <div className="info flex flex-col">
                       <h4 className="leading-3 text-[14px] text-[rgba(0,0,0,0.7)]  mb-0 capitalize text-left justify-start font-[500]">

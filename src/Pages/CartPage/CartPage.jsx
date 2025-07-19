@@ -1,5 +1,6 @@
 import Button from "@mui/material/Button";
 import { BsFillBagCheckFill } from "react-icons/bs";
+import CartItems from "./CartItems";
 
 function CartPage() {
   return (

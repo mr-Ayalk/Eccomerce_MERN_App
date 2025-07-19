@@ -12,8 +12,9 @@ import AdsBannerSlider from "../../components/AdsBannerSlider/AdsBannerSlider";
 import ProductsSlider from "../../components/ProductsSlider/ProductsSlider";
 import BlogItem from "../../components/BlogItem/BlogItem";
 import HomeSliderV2 from "../../components/HomeSliderV2/HomeSliderV2";
-import BannerBoxV2 from "../../components/bannerBoxV2/bannerBoxV2";
+
 import AdsBannerSliderV2 from "../../components/AdsBannerSliderV2/AdsBannerSliderV2";
+import BannerBoxV2 from "../../components/bannerBoxV2/bannerBoxV2";
 function Home() {
   const [value, setValue] = React.useState(0);
 
