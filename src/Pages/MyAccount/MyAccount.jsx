@@ -6,12 +6,13 @@ import { IoBagCheckOutline } from "react-icons/io5";
 import { IoIosLogOut, IoMdHeartEmpty } from "react-icons/io";
 import { NavLink } from "react-router";
 import TextField from "@mui/material/TextField";
+import AccountSidebar from "../../components/AccountSidebar/AccountSidebar";
 function MyAccount() {
   return (
     <section className="py-10 w-full">
       <div className="container flex gap-5">
         <div className="col1 w-[20%]">
-          <div className="card bg-white shadow-md rounded-md ">
+          {/* <div className="card bg-white shadow-md rounded-md ">
             <div className="w-full p-5 flex items-center justify-center flex-col">
               <div className="w-[110px] h-[110px] rounded-full overflow-hidden mb-4 relative group ">
                 <img
@@ -74,7 +75,8 @@ function MyAccount() {
                 </NavLink>
               </li>
             </ul>
-          </div>
+          </div> */}
+          <AccountSidebar/>
         </div>
 
         <div className="col2 w-[50%]">

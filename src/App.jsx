@@ -26,6 +26,7 @@ import toast, { Toaster } from "react-hot-toast";
 import ForgotPassword from "./Pages/ForgotPassword/ForgotPassword";
 import Checkout from "./Pages/Checkout/Checkout";
 import MyAccount from "./Pages/MyAccount/MyAccount";
+import MyList from "./Pages/MyList/MyList";
 // import Drawer from "@mui/materia/Drawer";
 const MyContext = createContext();
 function App() {
@@ -86,6 +87,7 @@ function App() {
             />
             <Route path={"/checkout"} exact={true} element={<Checkout />} />
             <Route path={"/my-account"} exact={true} element={<MyAccount />} />
+               <Route path={"/my-list"} exact={true} element={<MyList />} />
           </Routes>
           <Footer />
         </MyContext.Provider>
