@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css/navigation";
 import "swiper/css";
-import BannerBoxV2 from "../bannerBoxV2/bannerBoxV2";
+import BannerBoxV2 from "../BannerBoxV2/BannerBoxV2";
 
 function AdsBannerSliderV2(props) {
   return (

@@ -14,7 +14,9 @@ import BlogItem from "../../components/BlogItem/BlogItem";
 import HomeSliderV2 from "../../components/HomeSliderV2/HomeSliderV2";
 
 import AdsBannerSliderV2 from "../../components/AdsBannerSliderV2/AdsBannerSliderV2";
+// import BannerBoxV2 from "../../components/BannerBoxV2/BannerBoxV2.jsx";
 import BannerBoxV2 from "../../components/BannerBoxV2/BannerBoxV2";
+
 function Home() {
   const [value, setValue] = React.useState(0);
 
