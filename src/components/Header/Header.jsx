@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../../assets/logo-light-transparent.png";
+import userimg from "../../assets/ayalk.jpg";
 import Search from "../Search/Search";
 import Button from "@mui/material/Button";
 import Badge from "@mui/material/Badge";
@@ -19,6 +19,7 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 
 import { IoIosLogOut, IoMdHeartEmpty } from "react-icons/io";
+import Logo from "../Logo";
 const StyledBadge = styled(Badge)(({ theme }) => ({
   "& .MuiBadge-badge": {
     right: -3,
@@ -77,7 +78,10 @@ function Header() {
         <div className="container flex items-center justify-between">
           <div className="col1 w-[25%]">
             <Link to={"/"}>
-              <img src={logo} alt="logo" className="h-12" />
+              <Logo
+                className="text-emerald-950"
+                spanDesign="group-hover:text-[#063c28] "
+              />
             </Link>
           </div>
           <div className="col2 w-[40%]">
@@ -108,7 +112,15 @@ function Header() {
                     onClick={handleClick}
                   >
                     <div className="!w-[40px] !h-[40px] !min-w-[40px] !rounded-full !bg-[#f1f1f1] relative">
-                      <FaRegUser className="text-[16px] text-[rgba(0,0,0,0.7)] !items-center absolute top-[10px] left-[10px]" />
+                      {(
+                        <img
+                          src={userimg}
+                          alt="logo"
+                          className="rounded-full"
+                        />
+                      ) || (
+                        <FaRegUser className="text-[16px] text-[rgba(0,0,0,0.7)] !items-center absolute top-[10px] left-[10px]" />
+                      )}
                     </div>
                     <div className="info flex flex-col">
                       <h4 className="leading-3 text-[14px] text-[rgba(0,0,0,0.7)]  mb-0 capitalize text-left justify-start font-[500]">

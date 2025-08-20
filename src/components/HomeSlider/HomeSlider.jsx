@@ -34,15 +34,7 @@ function HomeSlider() {
               />
             </div>
           </SwiperSlide>
-          <SwiperSlide>
-            <div className="item rounded-[20px] overflow-hidden">
-              <img
-                src="https://i.ytimg.com/vi/tSUNZwi7Fr0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAmU4lDxpdL0j5iMTMPF7OIWUjkMg"
-                alt=""
-                className="!w-full h-[400px]"
-              />
-            </div>
-          </SwiperSlide>
+
           <SwiperSlide>
             <div className="item rounded-[20px] overflow-hidden">
               <img
